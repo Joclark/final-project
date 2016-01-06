@@ -30,7 +30,7 @@ Author: Jo Clark
 /*******************************************/
 /*max-width: 100%;*/
 .site-container {
-	max-width: 960px;
+	max-width: 980px;
 	margin: 0 auto;
      font-family: 'Armata', sans-serif;
 }
@@ -45,6 +45,11 @@ h1 span {
 }
 .site-header {
      border-bottom: 1px solid black;
+     position:fixed;
+     z-index: 100;
+     background: #fff;
+     top: 0px;
+    
 }
 
 .site-header h1 {
@@ -53,11 +58,16 @@ h1 span {
      font-weight: bold;	
      padding:30px 0px 10px 0px;
      margin: 0;
+     
 }
 
 .site-header h1, .nav li{
      margin: 0;
      display: inline-block;
+}
+
+.site-header .nav li:nth-last-child(1) {
+    margin-right: 28px
 }
 
 /*.nav ul li {*/
@@ -66,6 +76,8 @@ h1 span {
 /*}*/
 
 .site-content {
+    height: 2300px;
+    margin-top: 50px;
 }
 
 /*nav ul {*/
@@ -79,20 +91,19 @@ h1 span {
 }
 
 ul {
-     margin: 0;
+     margin: 0px 0px 0px 30px;
 }
 nav ul li {
-     font-size: 13px;
+     font-size: 12px;
 }
 ul li {
      list-style-type: none;
 }
 
-
 a {
      text-decoration: none;
-     color: black;
      padding:0px 6px 0px 0px;
+     color:black;
 }
 
 a:hover {
@@ -105,11 +116,16 @@ a:active {
     color:#FF8C00;
 }
 
+.site-container {
+    position:relative;
+    top:45px;
+}
+
 .container-1 {
     text-align: center;
     width: 75%;
     height: 270px;
-    margin: 20px 10px 80px 220px;
+    margin: 20px 10px 100px 220px;
     background-color: white;
     border: 5px solid black;
     border-radius: 20px;
@@ -126,6 +142,12 @@ img {
 
 img {
     float: left;
+} 
+
+.find-a-trainer img {
+    height: 325px;
+    margin: 20px 0px 0px -10px;
+
 }   
     
 span {
@@ -147,7 +169,7 @@ button {
     text-align: center;
     width: 75%;
     height: 270px;
-    margin: 20px 10px 80px 220px;
+    margin: 20px 10px 100px 220px;
     background-color: white;
     border: 5px solid black;
     border-radius: 20px;
@@ -177,7 +199,7 @@ h3 {
     text-align: center;
     width: 75%;
     height: 270px;
-    margin: 20px 10px 80px 220px;
+    margin: 20px 10px 100px 220px;
     border: 5px solid black;
     border-radius: 20px;
     padding:5px;
@@ -189,7 +211,7 @@ h3 {
     text-align: center;
     width: 75%;
     height: 270px;
-    margin: 20px 10px 80px 220px;
+    margin: 20px 10px 100px 220px;
     border: 5px solid black;
     border-radius: 20px;
     padding:5px;
@@ -199,12 +221,12 @@ h3 {
 
 .container-5 {
     width: 100%;
-    height:400px;
+    height:380px;
     text-align: center;
-    padding:10px;
+    padding: 0px 10px 10px 10px;
     text-shadow:0.10px 0.10px 0.10px #FF8C00;
     margin: 5px;
-    border: 2px solid black;
+    /*border: 2px solid black;*/
 }
 
 
@@ -219,7 +241,7 @@ h3 {
 .col {
     display: block;
     float:left;
-    margin: 1.6% 0 1.6% 1.6%;
+    margin: 1% 0 1% 1.6%;
     height:140px;
     border: 2px solid black;
     border-radius: 20px;
@@ -247,9 +269,10 @@ h3 {
 
 .row-1 {
     text-align: center;
-    height:40px;
-
+    height:20px;
+    margin-bottom: 10px;
 }
+
 .col img {
     height:100%;
     width: 30%;
@@ -264,21 +287,29 @@ h3 {
     text-align: center;
     width: 75%;
     height: 270px;
-    margin: 20px 10px 80px 220px;
+    margin: 20px 10px 100px 220px;
     background-color: #E6E6E6;
     border: 5px solid black;
     border-radius: 20px;
     padding:5px;
     text-shadow:0.10px 0.10px 0.10px #FF8C00;
-} 
+}
+
+
 .site-footer {
      border-top: 1px solid black;
+     margin-top: 0px;
+     position: fixed;
+     z-index: 100;
+     background: #fff;
+     bottom: 0px;
 }
 
 .site-footer li{
-     margin: 20px 20px 10px 0px;
+     margin: 10px 18px 20px 24px;
      display: inline-block;
      font-size: 13px;
+
 }  
 
 }
